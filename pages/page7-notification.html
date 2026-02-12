@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Status - Blood Bank System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page7-notification.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1-home.html" class="logo">
+                <span class="blood-drop">🩸</span>
+                <span class="logo-text">LifeBlood Connect</span>
+            </a>
+            <div class="nav-links">
+                <a href="page1-home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#donors">Donors</a>
+                <a href="#contact">Contact</a>
+                <a href="page6-emergency.html" class="emergency-btn">🚨 Emergency</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notification Container -->
+    <div class="notification-container">
+        <div class="notification-box">
+            <div class="notif-icon">📬</div>
+            <h2>Request Sent Successfully</h2>
+            <p class="notif-message">Emergency blood request for <strong id="request-blood">B+</strong> group has been sent to nearby donors.</p>
+
+            <div class="request-status">
+                <div class="status-item completed">
+                    <span class="status-icon">✅</span>
+                    <span>Request Sent</span>
+                </div>
+                <div class="status-item pending" id="status-accepted">
+                    <span class="status-icon">⏳</span>
+                    <span>Waiting for Response</span>
+                </div>
+                <div class="status-item pending" id="status-contact">
+                    <span class="status-icon">⏳</span>
+                    <span>Contact Details</span>
+                </div>
+            </div>
+
+            <div class="donor-response" id="donor-response" style="display: none;">
+                <h3>Donor Accepted Your Request!</h3>
+                <div class="response-info">
+                    <p><strong>Name:</strong> Rajesh Kumar</p>
+                    <p><strong>Blood Group:</strong> B+</p>
+                    <p><strong>Distance:</strong> 2.3 km</p>
+                    <p><strong>Contact:</strong> +91 98765 43210</p>
+                </div>
+                <a href="page8-success.html" class="btn btn-primary">View Details</a>
+            </div>
+
+            <a href="page4-search.html" class="btn btn-outline">Back to Search</a>
+        </div>
+    </div>
+
+    <script src="../js/page7-notification.js"></script>
+</body>
+</html>

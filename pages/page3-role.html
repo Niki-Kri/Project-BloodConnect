@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection - Blood Bank System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page3-role.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1-home.html" class="logo">
+                <span class="blood-drop">🩸</span>
+                <span class="logo-text">LifeBlood Connect</span>
+            </a>
+            <div class="nav-links">
+                <a href="page1-home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#donors">Donors</a>
+                <a href="#contact">Contact</a>
+                <a href="page6-emergency.html" class="emergency-btn">🚨 Emergency</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Role Selection Container -->
+    <div class="role-container">
+        <h2>Select Your Role</h2>
+        <p class="subtitle">How would you like to proceed?</p>
+
+        <div class="role-cards">
+            <div class="role-card" onclick="selectRole('donor')">
+                <div class="role-icon">🧑‍🩸</div>
+                <h3>I'm a Donor</h3>
+                <p>I want to donate blood and save lives</p>
+                <button class="btn btn-primary">Continue as Donor</button>
+            </div>
+
+            <div class="role-card" onclick="selectRole('receiver')">
+                <div class="role-icon">🏥</div>
+                <h3>I Need Blood</h3>
+                <p>I'm looking for blood donors</p>
+                <button class="btn btn-primary">Find Donors</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/page3-role.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - Blood Bank System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page8-success.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1-home.html" class="logo">
+                <span class="blood-drop">🩸</span>
+                <span class="logo-text">LifeBlood Connect</span>
+            </a>
+            <div class="nav-links">
+                <a href="page1-home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#donors">Donors</a>
+                <a href="#contact">Contact</a>
+                <a href="page6-emergency.html" class="emergency-btn">🚨 Emergency</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Container -->
+    <div class="success-container">
+        <div class="success-animation">
+            <div class="success-checkmark">✓</div>
+        </div>
+        <h2>Donor Found Successfully!</h2>
+        <p class="success-subtitle">Thank you for using LifeBlood Connect</p>
+
+        <div class="donor-details-card">
+            <h3>Donor Information</h3>
+            <div class="detail-row">
+                <span class="label">Name:</span>
+                <span class="value">Rajesh Kumar</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Blood Group:</span>
+                <span class="value">B+ Positive</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Contact:</span>
+                <span class="value">+91 98765 43210</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Location:</span>
+                <span class="value">Andheri West, Mumbai</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Distance:</span>
+                <span class="value">2.3 km away</span>
+            </div>
+        </div>
+
+        <div class="success-actions">
+            <button class="btn btn-primary" onclick="callDonor()">📞 Call Donor</button>
+            <button class="btn btn-secondary" onclick="thankDonor()">❤️ Thank Donor</button>
+        </div>
+
+        <a href="page1-home.html" class="btn btn-outline">Back to Home</a>
+    </div>
+
+    <script src="../js/page8-success.js"></script>
+</body>
+</html>

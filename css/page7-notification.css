@@ -1,0 +1,103 @@
+/* Page 7 - Notification Page Styles */
+
+.notification-container {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.notification-box {
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.notif-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.notification-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.notif-message {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.request-status {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+}
+
+.status-item.completed {
+    background-color: #d4edda;
+}
+
+.status-item.pending {
+    opacity: 0.6;
+}
+
+.status-icon {
+    font-size: 1.5rem;
+}
+
+.donor-response {
+    background: linear-gradient(135deg, var(--success-color), #00b894);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.donor-response h3 {
+    margin-bottom: 1rem;
+}
+
+.response-info {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.response-info p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .notification-container {
+        padding: 1rem;
+    }
+
+    .notification-box {
+        padding: 2rem;
+    }
+}

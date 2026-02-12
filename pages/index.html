@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank System - Page Navigator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e63946, #d62828);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #e63946;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .page-card {
+            background: linear-gradient(135deg, #f1faee, #e8f4f8);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #e63946;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .page-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+        }
+
+        .page-number {
+            background: #e63946;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .page-card h3 {
+            color: #e63946;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .features li {
+            color: #457b9d;
+            font-size: 0.85rem;
+            margin: 0.25rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #06d6a0;
+            font-weight: bold;
+        }
+
+        .quick-start {
+            background: #06d6a0;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .quick-start h2 {
+            margin-bottom: 1rem;
+        }
+
+        .start-btn {
+            background: white;
+            color: #06d6a0;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .start-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩸 Blood Bank System</h1>
+        <p class="subtitle">Navigate to any page to see the complete system</p>
+
+        <div class="quick-start">
+            <h2>Ready to Start?</h2>
+            <p style="margin-bottom: 1rem;">Begin your journey from the Home page</p>
+            <a href="page1-home.html" class="start-btn">🚀 Start Here - Home Page</a>
+        </div>
+
+        <div class="page-grid">
+            <a href="page1-home.html" class="page-card">
+                <div class="page-number">1</div>
+                <h3>Home / Landing Page</h3>
+                <p>Entry point with city selection and emergency access</p>
+                <ul class="features">
+                    <li>City selector</li>
+                    <li>Info cards</li>
+                    <li>Statistics</li>
+                    <li>Call to action</li>
+                </ul>
+            </a>
+
+            <a href="page2-login.html" class="page-card">
+                <div class="page-number">2</div>
+                <h3>Login / Register</h3>
+                <p>User authentication for donors, receivers, and blood banks</p>
+                <ul class="features">
+                    <li>3 user type tabs</li>
+                    <li>Login & Register</li>
+                    <li>OTP option</li>
+                    <li>Blood group selection</li>
+                </ul>
+            </a>
+
+            <a href="page3-role.html" class="page-card">
+                <div class="page-number">3</div>
+                <h3>Role Selection</h3>
+                <p>Choose between being a donor or needing blood</p>
+                <ul class="features">
+                    <li>Donor option</li>
+                    <li>Receiver option</li>
+                    <li>Clear visual cards</li>
+                    <li>Direct navigation</li>
+                </ul>
+            </a>
+
+            <a href="page4-search.html" class="page-card">
+                <div class="page-number">4</div>
+                <h3>Search Donors</h3>
+                <p>Find blood donors based on location and blood group</p>
+                <ul class="features">
+                    <li>Blood group filter</li>
+                    <li>GPS location</li>
+                    <li>Radius selection</li>
+                    <li>Search form</li>
+                </ul>
+            </a>
+
+            <a href="page5-results.html" class="page-card">
+                <div class="page-number">5</div>
+                <h3>Search Results</h3>
+                <p>View available donors with detailed information</p>
+                <ul class="features">
+                    <li>Donor cards grid</li>
+                    <li>Distance display</li>
+                    <li>Availability status</li>
+                    <li>Send request</li>
+                </ul>
+            </a>
+
+            <a href="page6-emergency.html" class="page-card">
+                <div class="page-number">6</div>
+                <h3>Emergency Mode</h3>
+                <p>Activated when no donors are found nearby</p>
+                <ul class="features">
+                    <li>SMS broadcast</li>
+                    <li>Blood bank list</li>
+                    <li>Contact info</li>
+                    <li>Emergency actions</li>
+                </ul>
+            </a>
+
+            <a href="page7-notification.html" class="page-card">
+                <div class="page-number">7</div>
+                <h3>Notification / Request</h3>
+                <p>Track request status and donor responses</p>
+                <ul class="features">
+                    <li>Status tracker</li>
+                    <li>Real-time updates</li>
+                    <li>Donor acceptance</li>
+                    <li>Contact reveal</li>
+                </ul>
+            </a>
+
+            <a href="page8-success.html" class="page-card">
+                <div class="page-number">8</div>
+                <h3>Success / Thank You</h3>
+                <p>Final confirmation with complete donor details</p>
+                <ul class="features">
+                    <li>Success animation</li>
+                    <li>Donor details</li>
+                    <li>Call option</li>
+                    <li>Thank donor</li>
+                </ul>
+            </a>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: #f1faee; border-radius: 12px; text-align: center;">
+            <h3 style="color: #e63946; margin-bottom: 1rem;">📚 Documentation</h3>
+            <p style="color: #666;">Check the <strong>README-SEPARATE-FILES.md</strong> for complete documentation</p>
+            <p style="color: #666; margin-top: 0.5rem;">Each page has its own HTML, CSS, and JavaScript files</p>
+        </div>
+    </div>
+</body>
+</html>

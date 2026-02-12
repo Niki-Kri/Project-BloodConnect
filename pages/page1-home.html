@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blood Bank System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page1-home.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1-home.html" class="logo">
+                <span class="blood-drop">🩸</span>
+                <span class="logo-text">LifeBlood Connect</span>
+            </a>
+            <div class="nav-links">
+                <a href="page1-home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#donors">Donors</a>
+                <a href="#contact">Contact</a>
+                <a href="page6-emergency.html" class="emergency-btn">🚨 Emergency</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Donate Blood, Save Lives ❤️</h1>
+            <p class="hero-subtitle">Connect with blood donors in your city instantly</p>
+
+            <div class="city-selector">
+                <label for="city">Select Your City:</label>
+                <select id="city" class="city-dropdown">
+                    <option value="">Choose City</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="pune">Pune</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                </select>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="page2-login.html" class="btn btn-primary">Login</a>
+                <a href="page2-login.html" class="btn btn-secondary">Register as Donor</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="illustration">
+                <div class="blood-bag">
+                    <div class="bag-top"></div>
+                    <div class="bag-body">
+                        <span class="blood-type">O+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h2>Why Donate Blood?</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="icon">🫀</div>
+                <h3>Save Lives</h3>
+                <p>One donation can save up to 3 lives</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">⚡</div>
+                <h3>Quick & Safe</h3>
+                <p>Donation takes only 10-15 minutes</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🏥</div>
+                <h3>Always Needed</h3>
+                <p>Blood is needed every 2 seconds</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🌍</div>
+                <h3>Community Impact</h3>
+                <p>Help your local community in emergencies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">50,000+</div>
+                <div class="stat-label">Active Donors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1,20,000+</div>
+                <div class="stat-label">Lives Saved</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Partner Hospitals</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Emergency Support</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/page1-home.js"></script>
+</body>
+</html>

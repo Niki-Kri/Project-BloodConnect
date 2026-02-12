@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Mode - Blood Bank System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page6-emergency.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1-home.html" class="logo">
+                <span class="blood-drop">🩸</span>
+                <span class="logo-text">LifeBlood Connect</span>
+            </a>
+            <div class="nav-links">
+                <a href="page1-home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#donors">Donors</a>
+                <a href="#contact">Contact</a>
+                <a href="page6-emergency.html" class="emergency-btn">🚨 Emergency</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emergency Container -->
+    <div class="emergency-container">
+        <div class="emergency-header">
+            <div class="emergency-icon">🚨</div>
+            <h2>Emergency Mode Activated</h2>
+            <p class="emergency-subtitle">No donors found nearby. Expanding search and notifying blood banks.</p>
+        </div>
+
+        <div class="emergency-actions">
+            <div class="emergency-card">
+                <div class="card-icon">📢</div>
+                <h3>Notify All Nearby Donors</h3>
+                <p>Send SMS to all registered donors within 20 km</p>
+                <button class="btn btn-primary" onclick="notifyDonors()">Send Notifications</button>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🏥</div>
+                <h3>Contact Blood Banks</h3>
+                <p>View nearby blood banks with available stock</p>
+                <button class="btn btn-secondary" onclick="showBloodBanks()">View Blood Banks</button>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🗺️</div>
+                <h3>Previous Donors</h3>
+                <p>Contact donors who helped in past emergencies</p>
+                <button class="btn btn-secondary" onclick="showPreviousDonors()">View Donors</button>
+            </div>
+        </div>
+
+        <div class="blood-bank-list" id="blood-bank-list">
+            <h3>Nearby Blood Banks</h3>
+            <div class="bank-card">
+                <h4>City General Hospital Blood Bank</h4>
+                <p>📍 2.5 km away</p>
+                <p>📞 +91 98765 43210</p>
+                <p>🩸 Blood Available: A+, B+, O+, AB+</p>
+                <button class="btn btn-sm">Call Now</button>
+            </div>
+            <div class="bank-card">
+                <h4>Red Cross Blood Center</h4>
+                <p>📍 4.8 km away</p>
+                <p>📞 +91 98765 43211</p>
+                <p>🩸 Blood Available: All Groups</p>
+                <button class="btn btn-sm">Call Now</button>
+            </div>
+            <div class="bank-card">
+                <h4>Apollo Hospital Blood Bank</h4>
+                <p>📍 6.2 km away</p>
+                <p>📞 +91 98765 43212</p>
+                <p>🩸 Blood Available: A+, O+, O-, AB-</p>
+                <button class="btn btn-sm">Call Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/page6-emergency.js"></script>
+</body>
+</html>
