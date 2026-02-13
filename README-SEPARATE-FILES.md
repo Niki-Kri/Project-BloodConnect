@@ -45,15 +45,6 @@ blood-bank-system/
 ```
 
 
-### Option 1: View Individual Pages
-Open any page from the `pages/` folder directly in your browser:
-- Start with `pages/page1-home.html`
-- Navigate through the system using the buttons and links
-- Each page links to the next in the flow
-
-### Option 2: View Single-Page Version
-Open `index.html` in your browser for the complete single-page application.
-
 ## 📄 Page Details
 
 ### Page 1: Home (page1-home.html)
