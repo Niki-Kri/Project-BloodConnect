@@ -261,9 +261,10 @@ To make this a production-ready application:
 
 ---
 
-# FEATURES
+## FEATURES
 
-<!-- Emergency Mode as a Core Feature (Not Optional) -->
+# 1.  Emergency Mode as a Core Feature (Not Optional)
+
 
 Unlike most blood bank websites that only list donors, our system has a dedicated Emergency Mode. If donors are not found through normal search, the system automatically shifts to emergency handling, allowing:
 
@@ -274,7 +275,7 @@ Access to previous donors
 Quick contact with nearby blood banks
 This makes the system life-saving, not just informational.
 
-<!-- Role-Based User Journey (Donor / Receiver / Blood Bank) -->
+# 2.  Role-Based User Journey (Donor / Receiver / Blood Bank)
 
 The website does not treat all users the same. After login, users select their role, and the entire flow changes accordingly.
 
@@ -283,7 +284,8 @@ Donors see request notifications
 Receivers see search, emergency, and tracking features
 This reduces confusion and improves usability.
 
-<!-- Real-Time Request Tracking System -->
+# 3.  Real-Time Request Tracking System
+
 Our system shows a live status tracker for blood requests (sent → accepted → contact revealed).
 Most existing systems stop at “request sent,” but our system continues until the donor is successfully contacted.
 
@@ -297,7 +299,8 @@ GPS/location
 Distance radius (1 km, 5 km, 10 km, custom)
 This ensures faster blood availability during critical situations.
 
-<!-- Complete Modular Design (Separate Files Architecture) -->
+# 4.  Complete Modular Design (Separate Files Architecture)
+
 Each page has its own HTML, CSS, and JavaScript file. This is unique from a development perspective because:
 
 Easy maintenance
@@ -307,7 +310,8 @@ Better scalability
 Industry-level project structure
 It reflects real-world web development practices.
 
-<!-- User-Friendly, Guided Page Flow -->
+# 4. User-Friendly, Guided Page Flow 
+
 The system guides users step-by-step from home → login → role → search → results → emergency → success.
 This structured flow makes it easy even for non-technical users during stress situations.
 
